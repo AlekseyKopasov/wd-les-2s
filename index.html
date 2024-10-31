@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <title>Лекция 2: HTML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .shower {
+        --slide-ratio: calc(16 / 9);
+      }
+    </style>
+  </head>
+
+  <body class="shower full">
+  <!-- <body class="shower"> -->
+
+    <header class="caption">
+      <h1>Веб-разработка</h1>
+      <p>Лекция 2: HTML</p>
+    </header>
+
+    <section class="slide clear">
+      <h2 class="shout shrink">Лекция 3</h2>
+    </section>
+
+    <section class="slide clear">
+      <h2 class="shout">HTML</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Технологии в веб-разработке</h2>
+      <img src="img/tech-1.jpg" width="300px" alt="">
+    </section>
+
+    <section class="slide">
+      <h2>Технологии в веб-разработке</h2>
+      <p><b>Frontend</b> отвечает за то, как страница выглядит и как с ней взаимодействует пользователь в браузере</p>
+      <p><b>Backend</b> разработка фокусируется на серверной стороне сайта, обработке запросов от клиентов, управлении
+        данными и бизнес-логикой</p>
+    </section>
+
+    <section class="slide">
+      <h2>Технологии в веб-разработке</h2>
+      <p><b>Frontend</b> и <b>backend</b> взаимосвязаны и взаимозависимы. Они обеспечивают полноценное функционирование
+        сайта</p>
+      <img src="img/tech-2.jpg" width="400px" alt="">
+    </section>
+
+    <section class="slide clear center">
+      <div class="columns three">
+        <div class="center">
+          <img src="img/HTML5-logo.png" alt="">
+        </div>
+        <div class="center">
+          <img src="img/CSS3-logo.png" alt="">
+        </div>
+        <div class="center">
+          <img src="img/js-logo.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>HTML</h2>
+      <pre>
+        <code>&lt;!DOCTYPE html&gt;</code>
+        <code>&lt;html lang="ru"&gt;</code>
+        <code>&lt;head&gt;></code>
+        <code>  &lt;title&gt;HTML Code&lt;/title&gt;</code>
+        <code>  &lt;meta charset="UTF-8"&gt;</code>
+        <code>  <mark>&lt;link rel="stylesheet" href="style.css"&gt;<mark></code>
+        <code>  <mark>&lt;script src="example.js"&gt;&lt;/script&gt;<mark></code>
+        <code>&lt;/head&gt;</code>
+    </pre>
+    </section>
+
+    <section class="slide">
+      <h2>CSS</h2>
+      <pre>
+        <code>
+          .center {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+        </code>
+    </pre>
+    </section>
+
+    <section class="slide">
+      <h2>JS</h2>
+      <pre>
+        <code>
+          const fetchData = (data = null) => {
+            fetch(AUTH_URL, {
+              method: 'POST',
+              body: data,
+            })
+          };
+        </code>
+    </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Какие бывают сайты</h2>
+      <p>По оптимизированности веб-сайта для разных цифровых устройств:</p>
+      <ul>
+        <li>Статические</li>
+        <li>Жидкие (подвижные)</li>
+        <li>Адаптивные</li>
+        <li>Отзывчивые</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Какие бывают сайты</h2>
+      <p>По способу формирования и обновляемости контента:</p>
+      <ul>
+        <li>Статические</li>
+        <li>Динамические</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Какие бывают сайты</h2>
+      <p>По типу контента:</p>
+      <div class="columns two">
+        <ul>
+          <li>блоги</li>
+          <li>корпоративные сайты</li>
+          <li>краудфандинговые платформы</li>
+          <li>сайты электронной коммерции</li>
+        </ul>
+        <ul>
+          <li>образовательные ресурсы</li>
+          <li>новостные сайты</li>
+          <li>социальные медиа</li>
+          <li>сайты ТВ или потокового видео</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Какие бывают сайты</h2>
+      <p>По типу подхода к разработке:</p>
+      <ul>
+        <li><b>MPA</b></li>
+        <li><b>SPA</b> (Gmail, Google Maps, GitHub)</li>
+        <li><b>PWA</b> (Google Docs)</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Критерии для проектов</h2>
+      <ol>
+        <li>Адаптивность: <b>нет</b>. Сайт статический</li>
+        <li>По обновляемости контента: <b>статичечкий</b></li>
+        <li>По типу подхода к разработке: <b>MPA</b></li>
+        <li>Используем только основные технологии: <b>HTML, CSS, JavaScript</b></li>
+        <li>Используем: <b> семантические HTML-теги</b></li>
+        <li>Используем: <b> адаптивные изображения</b></li>
+        <li>СЕО и оптимизация: <b>инструменты разработчиков в браузере</b></li>
+      </ol>
+    </section>
+
+    <section class="slide clear">
+      <h2 class="shout">HTML</h2>
+    </section>
+    <section class="slide clear">
+      <figure>
+        <img class="cover" src="img/html5.jpg"  alt="">
+      </figure>
+    </section>
+
+    <section class="slide">
+      <h2>Версии HTML</h2>
+      <ol>
+        <li><b>RFC 1866— HTML 2.0</b>: одобренный как стандарт2 2 сентября1995 года</li>
+        <li><b>HTML 3.2</b>: 14 января 1997 года</li>
+        <li><b>HTML 4.0</b>: 18 декабря 1997 года</li>
+        <li><b>HTML 4.01</b>: 24 декабря 1999 года</li>
+        <li><b>ISO/IEC 15445:2000</b>: 15 мая 2000 года</li>
+        <li><b>HTML 5</b>: спецификация опубликовна 28 октября 2014 года. Разработка продолжается</li>
+        <li><b>HTML 5.1</b>: в разработке с 19 декабря 2012 года</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2>Синтаксис HTML</h2>
+      <pre>
+        <code>&lt;html&gt;</code>
+        <code>  &lt;head&gt;</code>
+        <code>    ...</code>
+        <code>  &lt;/head&gt;</code>
+        <code>  &lt;body&gt;</code>
+        <code>   ...</code>
+        <code>  &lt;/body&gt;</code>
+        <code>&lt;/html&gt;</code>
+    </pre>
+    </section>
+    <section class="slide">
+      <h2>DOCTYPE</h2>
+      <ul>
+        <li>
+          <span>HTML 4.01</span>
+          <pre style="font-size: 16px;">
+            <code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</code>
+          </pre>
+        </li>
+        <li>
+          <span><b>HTML 5</b></span>
+          <pre style="font-size: 16px;">
+            <code><mark>&lt;!DOCTYPE html&gt;</mark></code>
+          </pre>
+        </li>
+        <li>
+          <span>XHTML 1.0</span>
+          <pre style="font-size: 14px;">
+            <code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</code>
+          </pre>
+        </li>
+        <li>
+          <span>XHTML 1.1</span>
+          <pre style="font-size: 14px;">
+            <code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot; &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;</code>
+          </pre>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>HTML документ</h2>
+      <pre>
+        <code class="mark">&lt;!DOCTYPE html&gt;</code>
+        <code>&lt;html&gt;</code>
+        <code>...</code>
+        <code>&lt;/html&gt;</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML документ</h2>
+      <pre>
+        <code>&lt;!DOCTYPE html&gt;</code>
+        <code class="mark">&lt;html&gt;</code>
+        <code>...</code>
+        <code class="mark">&lt;/html&gt;</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML документ</h2>
+      <pre>
+        <code>&lt;!DOCTYPE html&gt;</code>
+        <code>&lt;html&gt;</code>
+        <code class="mark">  &lt;head&gt;</code>
+          <code>...</code>
+        <code class="mark">  &lt;/head&gt;</code>
+        <code>&lt;/html&gt;</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML документ</h2>
+      <pre>
+        <code>&lt;!DOCTYPE html&gt;</code>
+        <code>&lt;html&gt;</code>
+        <code>  &lt;head&gt;...&lt;/head&gt;</code>
+        <code class="mark">  &lt;body&gt;</code>
+        <code>   </code>
+        <code class="mark">  &lt;/body&gt;</code>
+        <code>&lt;/html&gt;</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML документ</h2>
+      <pre>
+        <code>...</code>
+        <code>  &lt;head&gt;</code>
+        <code>  &lt;/head&gt;</code>
+        <code>...</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML документ</h2>
+      <pre>
+        <code>...</code>
+        <code>  &lt;head&gt;</code>
+        <code class="mark">    &lt;meta charset="utf-8"&gt;</code>
+        <code>  &lt;/head&gt;</code>
+        <code>...</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML документ</h2>
+      <pre>
+        <code>...</code>
+        <code>  &lt;head&gt;</code>
+        <code>    &lt;meta charset="utf-8"&gt;</code>
+        <code class="mark">    &lt;title&gt;Заголовок&lt;/title&gt;</code>
+        <code>  &lt;/head&gt;</code>
+        <code>...</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML документ</h2>
+      <pre>
+        <code>...</code>
+        <code>  &lt;head&gt;</code>
+        <code>    ...</code>
+        <code>    &lt;title&gt;Заголовок&lt;/title&gt;</code>
+        <code>    &lt;meta name="viewport" content=""&gt;</code>
+        <code>    &lt;meta name="description" content=""&gt;</code>
+        <code>  &lt;/head&gt;</code>
+        <code>...</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML документ</h2>
+      <pre>
+        <code>...</code>
+        <code>  &lt;head&gt;</code>
+        <code>    ...</code>
+        <code>    &lt;link rel="stylesheet" crossorigin="" href="main.css"&gt;</code>
+        <code>  &lt;/head&gt;</code>
+        <code>...</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Tеги</h2>
+      <ol>
+        <li>Хештеги</li>
+        <li>Теги записей</li>
+        <li>Облака тегов</li>
+        <li>Теги в музыке</li>
+        <li>Теги HTML</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: теги</h2>
+      <p><b>Тег</b> — это элемент языка разметки, который определяет, какой тип содержимого будет представлен.</p>
+
+      <pre>
+        <code>&lt;tag&gt;...&lt;/tag&gt;</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML: теги</h2>
+      <pre>
+        <code>&lt;div&gt;</code>
+        <code>  &lt;p&gt;Текст&lt;/p&gt;</code>
+        <code>&lt;/div&gt;</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML: теги</h2>
+      <pre>
+        <code class="mark">&lt;div&gt;  - открывающий тег </code>
+        <code>  &lt;p&gt;Текст&lt;/p&gt;</code>
+        <code>&lt;/div&gt;</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML: теги</h2>
+      <pre>
+        <code>&lt;div&gt;</code>
+        <code>  &lt;p&gt;Текст&lt;/p&gt;</code>
+        <code class="mark">&lt;/div&gt; - закрывающий тег </code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML: теги</h2>
+      <pre>
+        <code>&lt;div&gt;</code>
+        <code>  &lt;p&gt;<mark>Текст</mark>&lt;/p&gt; - контент </code>
+        <code>&lt;/div&gt;</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML: теги</h2>
+      <pre>
+        <code>&lt;div&gt;</code>
+        <code class="mark">  &lt;p&gt;Текст&lt;/p&gt; - элемент </code>
+        <code>&lt;/div&gt;</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML: теги</h2>
+      <pre>
+        <code>&lt;div&gt;</code>
+        <code>  &lt;p <mark class="important">id="text" data-text="inner"</mark> &gt;Текст&lt;/p&gt; - атрибуты  </code>
+        <code>&lt;/div&gt;</code>
+      </pre>
+    </section>
+    <section class="slide">
+      <h2>HTML: теги</h2>
+      <pre>
+        <code>&lt;div&gt;</code>
+        <code>  &lt;p&gt;Текст&lt;/p&gt;</code>
+        <code class="mark">  &lt;br&gt; - пустой элемент</code>
+        <code class="mark">  &lt;hr&gt; - пустой элемент</code>
+        <code class="mark">  &lt;img src="image.jpg" alt="Картинка"&gt; - пустой элемент</code>
+        <code>&lt;/div&gt;</code>
+      </pre>
+    </section>
+
+
+    <section class="slide">
+      <h2>HTML: теги</h2>
+      <p><mark>id и data</mark> - атрибуты  </p>
+      <pre>
+        <code> &lt;p <mark>id="text"</mark>   <mark>data-text="inner"</mark> &gt;Текст&lt;/p&gt; </code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: самые распространенные теги</h2>
+      <div class="columns three">
+        <ul>
+          <li>div</li>
+          <li>a</li>
+          <li>span</li>
+          <li>ul + li</li>
+        </ul>
+        <ul>
+          <li>p</li>
+          <li>img</li>
+          <li>br</li>
+          <li>script</li>
+        </ul>
+        <ul>
+          <li>link</li>
+          <li>meta</li>
+          <li>i</li>
+          <li>b</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Заголовки</h2>
+      <div class="columns two">
+        <pre>
+          <code>&lt;h1&gt;Заголовок&lt;/h1&gt;</code>
+          <code>&lt;h2&gt;Заголовок&lt;/h2&gt;</code>
+          <code>&lt;h3&gt;Заголовок&lt;/h3&gt;</code>
+          <code>&lt;h4&gt;Заголовок&lt;/h4&gt;</code>
+          <code>&lt;h5&gt;Заголовок&lt;/h5&gt;</code>
+          <code>&lt;h6&gt;Заголовок&lt;/h6&gt;</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Устаревшие теги</h2>
+      <ul>
+        <li>
+          <pre><code>&lt;acronym title=&quot;Северо-Западный Институт управления &quot;&gt;СЗИУ&lt;/acronym&gt;</code></pre>
+        </li>
+        <li>
+          <pre><code>&lt;blink&gt;Зачем так поступать?&lt;/blink&gt;</code></pre>
+        </li>
+        <li>
+          <pre><code>&lt;font color=&quot;green&quot;&gt;Текст&lt;/font&gt;</code></pre>
+        </li>
+        <li>
+          <pre><code>В &lt;nobr&gt;современном html&lt;/nobr&gt; это не используется</code></pre>
+        </li>
+        <li>
+          <pre><code>&lt;strike&gt;1200&lt;/strike&gt; 100 ₽</code></pre>
+        </li>
+        <li>...</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Вложенность тегов</h2>
+      <pre>
+        <code>&lt;ul&gt;</code>
+        <code>  &lt;li&gt;Первый элемент списка&lt;/li&gt;</code>
+        <code>  &lt;li&gt;Второй элемент списка&lt;/li&gt;</code>
+        <code>&lt;/ul&gt;</code>
+      </pre>
+    </section>
+
+
+    <section class="slide">
+      <h2>HTML: cтрочные и блочные теги</h2>
+      <div class="columns two">
+        <ul>
+          <h3>Строчные</h3>
+          <li>a</li>
+          <li>abbr</li>
+          <li>cite</li>
+          <li>code</li>
+        </ul>
+        <ul>
+          <h3>Блочные</h3>
+          <li>html</li>
+          <li>body</li>
+          <li>div</li>
+          <li>p</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TODO: Атрибуты тегов -->
+
+    <section class="slide">
+      <h2>Атрибуты тегов</h2>
+      <p><b>Атрибут </b> — это свойство HTML тега</p>
+      <ul>
+        <li>Глобальные атрибуты</li>
+        <li>Атрибуты событий</li>
+        <li>Сокращенные атрибуты</li>
+        <li>Атрибуты указания пути (адрес)</li>
+        <li>Атрибуты селекторы</li>
+        <li>Атрибут стиля</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Глобальные атрибуты</h2>
+      <span><strong>Можно вставить в любой тег</strong></span>
+      <p>accesskey, autocapitalize, autofocus, contenteditable, dir, draggable, enterkeyhint, hidden, inert, inputmode,
+        is, itemid, itemprop, itemref, itemscope, itemtype, lang, nonce, popover, spellcheck, style, tabindex, title,
+        translate</p>
+    </section>
+
+    <section class="slide">
+      <h2>Глобальные атрибуты</h2>
+      <span><strong>Можно вставить в любой тег</strong></span>
+      <p>accesskey, autocapitalize, autofocus, contenteditable, dir, draggable, enterkeyhint, <mark>hidden</mark>,
+        inert, inputmode, is, itemid, itemprop, itemref, itemscope, itemtype, <mark>lang</mark>, nonce, popover,
+        spellcheck, <mark class="ignore">style</mark>, <mark>tabindex</mark>, <mark class="important">title</mark>,
+        translate</p>
+    </section>
+
+    <section class="slide">
+      <h2>Атрибуты событий</h2>
+      <ul>
+        <li>
+          <span>Для объекта окна (применяются к тегу &lt;body&gt;): <b>onload, onresize</b></span>
+        </li>
+        <li>
+          <span>События формы: <b>onblur, onchange, oncontextmenu, onsubmit</b></span>
+        </li>
+        <li>
+          <span>События с помощью клавиатуры: <b>onkeydown, onkeypress, onkeyup</b></span>
+        </li>
+        <li>
+          <span>
+            События с помощью мыши: <b>onclick, onmousedown, onmousemove, onwheel</b>
+          </span>
+        </li>
+        <li>
+          <span>
+            События перетягивания: <b>ondrag, ondragend, ondragenter, ondragleave, ondragover</b>
+          </span>
+        </li>
+        <li>
+          <span>События буфера обмена: <b>oncopy, oncut, onpaste</b></span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Сокращенные атрибуты</h2>
+      <div class="columns two">
+        <ul>
+          <li>async</li>
+          <li>autofocus</li>
+          <li>autoplay</li>
+          <li>checked</li>
+        </ul>
+        <ul>
+          <li>disabled</li>
+          <li>hidden</li>
+          <li>readonly</li>
+          <li>required</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Сокращенные атрибуты</h2>
+      <ul>
+        <li>checked="checked" — можно записать <b>checked</b>
+        </li>
+        <li>readonly="readonly" — можно записать <b>readonly</b></li>
+        <li>controls="controls" — можно записать <b>controls</b></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Атрибуты указания пути</h2>
+      <p>Применяются для того, чтобы указать адрес файла, страницы или сайта</p>
+      <ul>
+        <li>href</li>
+        <li>src</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Атрибуты селекторы</h2>
+      <p>Предназначены для создания выборки элементов (используются в CSS и JavaScript)</p>
+      <ul>
+        <li><b>class</b>="имяКласса" </li>
+        <li><b>id</b>="имяУникальногоИдентификатора" </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Атрибут стиля</h2>
+      <p>это атрибут, который размещает CSS-код непосредственно в HTML-тег</p>
+      <ul>
+        <li><b>style</b>="color: tomato;"</li>
+      </ul>
+    </section>
+
+    <!-- TODO Атрибуты data-* -->
+
+    <section class="slide">
+      <h2>Атрибуты data-*</h2>
+      <p>это пользовательский атрибут на HTML-элементе, название которого начинается с <mark> data-</mark></p>
+
+      <ul>
+        <li>data-id="features"</li>
+        <li>data-counter="42"</li>
+        <li>data-slide="current"</li>
+        <li>data-user="{id:1; role: 'admin';}"</li>
+      </ul>
+    </section>
+
+    <!-- TODO Составные теги -->
+
+    <section class="slide">
+      <h2>Составные теги</h2>
+      <div class="columns two">
+        <ul>
+          <li>ul</li>
+          <li>ol</li>
+          <li>picture</li>
+          <li>table</li>
+          <li>form</li>
+          <li>select</li>
+        </ul>
+        <ul>
+          <li>template</li>
+          <li>dl dt dd</li>
+          <li>details</li>
+          <li>video</li>
+          <li>audio</li>
+          <li>figure</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TODO Формы -->
+
+    <section class="slide">
+      <h2>HTML: формы</h2>
+      <pre>
+        <code>&lt;form action="" method="post"&gt;</code>
+        <code>  &lt;label for="counter">Ваш возраст:&lt;/label&gt;</code>
+        <code>  &lt;input type="number" id="name" name="user_age"&gt;</code>
+        <code>  &lt;button type="submit"&gt;Отправить&lt;button&gt;</code>
+        <code>&lt;/form&gt;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: формы</h2>
+      <pre>
+        <code>&lt;<mark class="important">form</mark> action="" method="post"&gt;</code>
+        <code>  &lt;label for="counter">Ваш возраст:&lt;/label&gt;</code>
+        <code>  &lt;input type="number" id="name" name="user_age"&gt;</code>
+        <code>  &lt;button type="submit"&gt;Отправить&lt;button&gt;</code>
+        <code>&lt;/form&gt;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: формы</h2>
+      <pre>
+        <code>&lt;form <mark class="important">action=""</mark> method="post"&gt;</code>
+        <code>  &lt;label for="counter">Ваш возраст:&lt;/label&gt;</code>
+        <code>  &lt;input type="number" id="name" name="user_age"&gt;</code>
+        <code>  &lt;button type="submit"&gt;Отправить&lt;button&gt;</code>
+        <code>&lt;/form&gt;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: формы</h2>
+      <pre>
+        <code>&lt;form action="" <mark class="important">method="post"</mark> &gt;</code>
+        <code>  &lt;label for="counter">Ваш возраст:&lt;/label&gt;</code>
+        <code>  &lt;input type="number" id="name" name="user_age"&gt;</code>
+        <code>  &lt;button type="submit"&gt;Отправить&lt;button&gt;</code>
+        <code>&lt;/form&gt;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: формы</h2>
+      <pre>
+        <code>&lt;form action="" method="post"&gt;</code>
+        <code>  &lt;<mark class="important">label</mark> for="counter">Ваш возраст:&lt;/label&gt;</code>
+        <code>  &lt;input type="number" id="name" name="user_age"&gt;</code>
+        <code>  &lt;button type="submit"&gt;Отправить&lt;button&gt;</code>
+        <code>&lt;/form&gt;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: формы</h2>
+      <pre>
+        <code>&lt;form action="" method="post"&gt;</code>
+        <code>  &lt;label for="counter">Ваш возраст:&lt;/label&gt;</code>
+        <code>  &lt;<mark class="important">input</mark> type="number" id="name" name="user_age"&gt;</code>
+        <code>  &lt;button type="submit"&gt;Отправить&lt;button&gt;</code>
+        <code>&lt;/form&gt;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: атрибуты форм</h2>
+      <ul>
+        <li><b>action</b>: "/send-form.php"</li>
+        <li><b>method</b>: "get", "post"</li>
+        <li><b>name</b>: "login-form"</li>
+        <li><b>autocomplete</b>: "off"</li>
+        <li><b>novalidate</b></li>
+        <li><b>enctype</b>: "multipart/form-data"</li>
+        <li><b>accept-charset </b></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: поля форм</h2>
+      <ul>
+        <li>fieldset</li>
+        <li>legend</li>
+        <li>label</li>
+        <li>input</li>
+        <li>textarea</li>
+        <li>select</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Типы полей ввода (input)</h2>
+      <ul>
+        <li><b>Поле электронной почты</b>: type="email"</li>
+        <li><b>Поле поиска</b>: type="search"</li>
+        <li><b>Поле номера телефона</b>: type="tel"</li>
+        <li><b>Поле URL-адреса</b>: type="url" </li>
+        <li><b>Числовое поле</b>: type="number"</li>
+        <li><b>Ползунки</b>: type="range"</li>
+        <li><b>Выбор даты и времени</b>: type="date"</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Чекбоксы и радиокнопки</h2>
+      <ul>
+        <li>input type="radio"</li>
+        <li>input type="checkbox"</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Выпадающие списки</h2>
+      <pre>
+        <code>&lt;select name="select"&gt;</code>
+        <code>  &lt;option value="value1"&gt;Значение 1&lt;/option&gt;</code>
+        <code>  &lt;option value="value2"&gt;Значение 2&lt;/option&gt;</code>
+        <code>  &lt;option value="value3"&gt;Значение 3&lt;/option&gt;</code>
+        <code>&lt;/select&gt;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Атрибуты тега <b>select</b></h2>
+      <ul>
+        <li><b>autocomplete</b> — подсказка для функции автозаполнения формы</li>
+        <li><b>disabled</b> — делает элемент неактивным</li>
+        <li><b>form</b> — связывает список с формой</li>
+        <li><b>multiple</b> — позволяет выбрать несколько опций</li>
+        <li><b>name</b> — задает имя элемента, которое будет отправляться на сервер</li>
+        <li><b>required</b> — делает элемент обязательным для заполнения</li>
+        <li><b>size</b> — задает количество строк в списке</li>
+        <li><b>value</b> — для отправки значений на сервер</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Выпадающие списки
+      </h2>
+      <ul>
+        <li>Селект</li>
+        <li>Навигация</li>
+        <li>Меню</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Валидация форм</h2>
+      <p><b>Валидация формы</b> — это проверка данных, которые ввёл пользователь. </p>
+
+      <ul>
+        <li>на стороне клиента</li>
+        <li>на стороне сервера</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Валидация форм: атрибуты</h2>
+      <p><b>Валидация формы</b> — это проверка данных, которые ввёл пользователь. </p>
+
+      <ul>
+        <li>type</li>
+        <li>required</li>
+        <li>pattern</li>
+        <li>minlength, maxlength</li>
+        <li>min, max</li>
+      </ul>
+    </section>
+
+    <!-- TODO HTML: таблицы -->
+
+    <section class="slide">
+      <h2>HTML: таблицы</h2>
+      <pre>
+        <code>&lt;table&gt;</code>
+        <code>  &lt;tr&gt;</code>
+        <code>   &lt;th&gt;Возраст&lt;/th&gt;</code>
+        <code>  &lt;/tr&gt;</code>
+        <code>  &lt;tr&gt;</code>
+        <code>   &lt;td&gt;22&lt;/td&gt;</code>
+        <code>  &lt;/tr&gt;</code>
+        <code>&lt;/table&gt;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Теги таблиц</h2>
+      <div class="columns four">
+        <ul>
+          <li>table</li>
+          <li>thead</li>
+        </ul>
+        <ul>
+          <li>tbody</li>
+          <li>tfoot</li>
+        </ul>
+        <ul>
+          <li>th</li>
+          <li>tr</li>
+        </ul>
+        <ul>
+          <li>td</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Атрибуты таблиц</h2>
+      <ol>
+        <li>colspan</li>
+        <li>rowspan</li>
+      </ol>
+    </section>
+
+    <!-- TODO Семантическая вёрстка -->
+
+    <section class="slide">
+      <h2>HTML: cемантическая вёрстка</h2>
+      <blockquote><b>Семантическая вёрстка</b> — подход к разметке, который опирается не на содержание сайта, а на
+        <b><i>смысловое предназначение</i></b> каждого блока и логическую структуру документа.</blockquote>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: cемантическая вёрстка</h2>
+      <div class="columns two">
+        <ul>
+          <li>article</li>
+          <li>section</li>
+          <li>aside</li>
+          <li>nav</li>
+        </ul>
+        <ul>
+          <li>header</li>
+          <li>main</li>
+          <li>footer</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: cемантическая вёрстка</h2>
+      <ol>
+        <li>Крупные смысловые блоки на каждой странице</li>
+        <li>Крупные смысловые разделы в блоках</li>
+        <li>Заголовок всего документа и заголовки смысловых разделов</li>
+        <li>Мелкие элементы в смысловых разделах</li>
+        <li>Фразовые элементы</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: cемантическая вёрстка</h2>
+      <h3>Крупные смысловые блоки на каждой странице</h3>
+      <pre>
+          <code>&lt;header&gt;...&lt;/header&gt;</code>
+          <code>&lt;main&gt;...&lt;/main&gt;</code>
+          <code>&lt;footer&gt;...&lt;/footer&gt;</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: cемантическая вёрстка</h2>
+      <h3>Крупные смысловые разделы в блоках</h3>
+      <pre>
+          <code>&lt;nav&gt;...&lt;/nav&gt;</code>
+          <code>&lt;section&gt;...&lt;/section&gt;</code>
+          <code>&lt;article&gt;...&lt;article&gt;</code>
+          <code>&lt;aside&gt;...&lt;aside&gt;</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: cемантическая вёрстка</h2>
+      <h3>Заголовок всего документа и заголовки смысловых разделов</h3>
+      <pre>
+          <code>&lt;h1&gt;—&lt;h6&gt;</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: cемантическая вёрстка</h2>
+      <h3>Мелкие элементы в смысловых разделах</h3>
+      <ul>
+        <li>cписки</li>
+        <li>таблицы</li>
+        <li>демо-материалы</li>
+        <li>параграфы</li>
+        <li>прогресс</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>HTML: cемантическая вёрстка</h2>
+      <h3>Фразовые элементы</h3>
+      <ul>
+        <li>изображения</li>
+        <li>ссылки</li>
+        <li>кнопки</li>
+        <li>видео</li>
+        <li>мелкие текстовые элементы</li>
+      </ul>
+    </section>
+
+    <section class="slide clear">
+      <figure>
+        <img class="cover" src="img/24-div.png"  alt="">
+      </figure>
+    </section>
+
+    <section class="slide">
+      <h2>Практика: разметка проекта</h2>
+      <ol>
+        <li>Выделить в макете проекта крупные смысловые блоки</li>
+        <li>Разметить страницу с помощью семантических тегов</li>
+        <li>Добавить текст</li>
+      </ol>
+    </section>
+
+    <!-- TODO Материалы и ссылки -->
+
+    <section class="slide">
+      <h2>Материалы и ссылки ч.1/5</h2>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics"
+            target="_blank">Основы HTML</a>
+        </li>
+        <li><a href="https://htmlacademy.ru/blog/html/15-html-tag" target="_blank">Теги (статья 1)</a></li>
+        <li><a href="https://htmlacademy.ru/blog/html/introduction-to-html" target="_blank">Теги (статья 2)</a></li>
+        <li><a href="https://htmlacademy.ru/blog/html/semantics" target="_blank">О семантике</a></li>
+        <li><a href="https://gabdrahimov.ru/html-atributy" target="_blank">Атрибуты HTML</a></li>
+        <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML/Attributes" target="_blank">Справочная информация по
+            HTML атрибутам</a></li>
+      </ul>
+    </section>
+    <section class="slide">
+      <h2>Материалы и ссылки ч.2/5</h2>
+      <ul>
+        <li>
+          <a href="https://htmlacademy.ru/blog/html-tags/global" target="_blank">Глобальные атрибуты HTML</a>
+        </li>
+        <li>
+          <a href="https://doka.guide/html/data-attributes/" target="_blank">Атрибуты data-*</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/dl" target="_blank">Тег dl</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/ol" target="_blank">Тег ol</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/ul" target="_blank">Тег ul</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">Тег table</a>
+        </li>
+      </ul>
+    </section>
+    <section class="slide">
+      <h2>Материалы и ссылки ч.3/5</h2>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">Тег form (статья 1)</a>
+        </li>
+        <li>
+          <a href="https://doka.guide/html/form/" target="_blank">Тег form (статья 2)</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/select" target="_blank">Тег select</a>
+        </li>
+        <li>
+          <a href="https://htmlacademy.ru/blog/html-tags/select" target="_blank">Тег select — выпадающий список</a>
+        </li>
+        <li>
+          <a href="https://web-standards.ru/articles/native-and-custom-select/" target="_blank">Ищем баланс между
+            нативным и кастомным селектом</a>
+          </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" target="_blank">Тег picture</a>
+        </li>
+      </ul>
+    </section>
+    <section class="slide">
+      <h2>Материалы и ссылки ч.4/5</h2>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">Тег details</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/video" target="_blank">Тег video</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/audio" target="_blank">Тег audio</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">Тег figure</a>
+        </li>
+        <li>
+          <a href="https://doka.guide/html/template/" target="_blank">Тег template</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types" target="_blank">The HTML5
+            input types</a>
+          </li>
+      </ul>
+    </section>
+    <section class="slide">
+      <h2>Материалы и ссылки ч.5/5</h2>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/ru/docs/Learn/Forms/How_to_structure_a_web_form" target="_blank">Как
+            структурировать HTML-формы</a>
+          </li>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=E6kLaaQFctU&ab_channel=%D0%92%D0%B0%D0%B4%D0%B8%D0%BC%D0%9C%D0%B0%D0%BA%D0%B5%D0%B5%D0%B2"
+            target="_blank">Кастомные чекбоксы правильно (видео)</a>
+          </li>
+        <li>
+          <a href="https://html-css.blog/css/stilizacziya-chekboksa/" target="_blank">Стилизация чекбокса</a>
+        </li>
+        <li>
+          <a href="https://htmlacademy.ru/blog/js/valid-forms" target="_blank">3 способа валидации форм</a>
+        </li>
+        <li>
+          <a href="https://doka.guide/html/tables/" target="_blank">Таблицы</a>
+        </li>
+      </ul>
+    </section>
+
+     <!-- TODO: вопросы к тестам -->
+     <section class="slide">
+      <h2>Вопросы</h2>
+      <p style="font-size: 18px;"><b>С&nbsp;помощью какого атрибута можно задать текст для картинки, который будет отображен, если её&nbsp;не&nbsp;удастся загрузить?</b></p>
+      <ol style="font-size: 18px;">
+        <li>title</li>
+        <li>alt</li>
+        <li>popup</li>
+        <li>caption</li>
+      </ol>
+      <details style="font-size: 18px;">
+        <summary>Ответ</summary>
+          <p><b>alt</b></p>
+      </details>
+    </section>
+     <section class="slide">
+      <h2>Вопросы</h2>
+      <p style="font-size: 18px;"><b>Что позволяет указать тег <mark>title</mark> ?</b></p>
+      <ol style="font-size: 18px;">
+        <li>Название страницы, которое также будет отображено в&nbsp;поисковиках</li>
+        <li>Название маркированного списка</li>
+        <li>Название таблицы</li>
+        <li>Заголовок первого уровня на странице</li>
+      </ol>
+      <details style="font-size: 18px;">
+        <summary>Ответ</summary>
+          <p><b>Название страницы, которое также будет отображено в&nbsp;поисковиках</b></p>
+      </details>
+    </section>
+     <section class="slide">
+      <h2>Вопросы</h2>
+      <p style="font-size: 18px;"><b>Как правильно создать вложенный список (когда один список помещается внутри другого)?</b></p>
+      <ol style="font-size: 18px;">
+        <li>Внутри тега &lt;ul&gt; поместить ещё один тег &lt;ul&gt;, а&nbsp;внутри него добавлять теги &lt;li&gt;</li>
+        <li>Внутрь тега &lt;ul&gt; поместить тег &lt;li&gt;, внутри него снова создать тег &lt;ul&gt;, а&nbsp;внутри него &lt;li&gt;</li>
+      </ol>
+      <details style="font-size: 18px;">
+        <summary>Ответ</summary>
+          <p><b>Внутрь тега &lt;ul&gt; поместить тег &lt;li&gt;, внутри него снова создать тег &lt;ul&gt;, а&nbsp;внутри него &lt;li&gt;</b></p>
+      </details>
+    </section>
+     <section class="slide">
+      <h2>Вопросы</h2>
+      <p style="font-size: 18px;"><b>С&nbsp;помощью какого тега в&nbsp;HTML создаются ссылки?</b></p>
+      <ol style="font-size: 18px;">
+        <li>&lt;a&gt;</li>
+        <li>&lt;p&gt;</li>
+        <li>&lt;b&gt;</li>
+        <li>&lt;i&gt;</li>
+      </ol>
+      <details style="font-size: 18px;">
+        <summary>Ответ</summary>
+          <p><b>&lt;a&gt;</b></p>
+      </details>
+    </section>
+     <section class="slide">
+      <h2>Вопросы</h2>
+      <p style="font-size: 18px;"><b>Какую кодировку следует использовать на&nbsp;сайте?</b></p>
+      <ol style="font-size: 18px;">
+        <li>UTF-16</li>
+        <li>UTF-8</li>
+        <li>UTF-32</li>
+        <li>WINSOWS-1251</li>
+      </ol>
+      <details style="font-size: 18px;">
+        <summary>Ответ</summary>
+          <p><b>UTF-8</b></p>
+      </details>
+    </section>
+     <section class="slide">
+      <h2>Вопросы</h2>
+      <p style="font-size: 18px;"><b>Какое число заголовков первого уровня считается допустимым?</b></p>
+      <ol style="font-size: 18px;">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ol>
+      <details style="font-size: 18px;">
+        <summary>Ответ</summary>
+          <p><b>1</b></p>
+      </details>
+    </section>
+    <section class="slide">
+      <h2>Вопросы</h2>
+      <p style="font-size: 18px;"><b>С помощью какого тега в таблицах создаются строки?</b></p>
+      <ol style="font-size: 18px;">
+        <li>&lt;th&gt;</li>
+        <li>&lt;td&gt;</li>
+        <li>&lt;tr&gt;</li>
+      </ol>
+      <details style="font-size: 18px;">
+        <summary>Ответ</summary>
+          <p><b>&lt;tr&gt;</b></p>
+      </details>
+    </section>
+
+     <section class="slide">
+      <h2>Вопросы</h2>
+      <p style="font-size: 18px;"><b>Для чего используют тег <mark>div</mark> ?</b></p>
+      <ol style="font-size: 18px;">
+        <li>Для работы с видео</li>
+        <li>Для создание таблиц</li>
+        <li>Для работы с текстом</li>
+        <li>Для блочной верстки сайта</li>
+        <li>Для табличной верстки сайта</li>
+      </ol>
+      <details style="font-size: 18px;">
+        <summary>Ответ</summary>
+          <p><b>Для блочной верстки сайта</b></p>
+      </details>
+    </section>
+     <section class="slide">
+      <h2>Вопросы</h2>
+      <p style="font-size: 18px;"><b>Какой тег создает нумерованный список?</b></p>
+      <ol style="font-size: 18px;">
+        <li>&lt;ol&gt;</li>
+        <li>&lt;ul&gt;</li>
+      </ol>
+      <details style="font-size: 18px;">
+        <summary>Ответ</summary>
+          <p><b>&lt;ol&gt;</b></p>
+      </details>
+    </section>
+     <section class="slide">
+      <h2>Вопросы</h2>
+      <p style="font-size: 18px;"><b>Все <mark>input</mark>-теги стоит записывать внутри тега...</b></p>
+      <ol style="font-size: 18px;">
+        <li>section</li>
+        <li>fields</li>
+        <li>table</li>
+        <li>form</li>
+      </ol>
+      <details style="font-size: 18px;">
+        <summary>Ответ</summary>
+          <p><b>form</b></p>
+      </details>
+    </section>
+     <section class="slide">
+      <h2>Вопросы</h2>
+      <p style="font-size: 18px;"><b>Какой минимальный набор языков нужен для веб разработки?</b></p>
+      <ol style="font-size: 18px;">
+        <li>HTML, CSS, JavaScript, Python</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>HTML, CSS</li>
+      </ol>
+      <details style="font-size: 18px;">
+        <summary>Ответ</summary>
+          <p><b>HTML, CSS</b></p>
+      </details>
+    </section>
+     <section class="slide">
+      <h2>Вопросы</h2>
+      <p style="font-size: 18px;"><b>Какой тег не используется при работе с таблицами?</b></p>
+      <ol style="font-size: 18px;">
+        <li>&lt;tt&gt;</li>
+        <li>&lt;th&gt;</li>
+        <li>&lt;tfoot&gt;</li>
+        <li>&lt;tr&gt;</li>
+        <li>&lt;td&gt;</li>
+      </ol>
+      <details style="font-size: 18px;">
+        <summary>Ответ</summary>
+          <p><b>&lt;tt&gt;</b></p>
+      </details>
+    </section>
+     <section class="slide">
+      <h2>Вопросы</h2>
+      <p style="font-size: 18px;"><b>Как вставить картинку в HTML?</b></p>
+      <ol style="font-size: 18px;">
+        <li>&lt;img&gt;http://site.com/image.jpg&lt;/img&gt;</li>
+        <li>&lt;img src=&quot;http://site.com/image.jpg&quot;&gt;</li>
+        <li>&lt;image&gt;http://site.com/image.jpg&lt;/image&gt;</li>
+        <li>&lt;image source=&quot;http://site.com/image.jpg&quot;&gt;</li>
+      </ol>
+      <details style="font-size: 18px;">
+        <summary>Ответ</summary>
+          <p><b>&lt;img src=&quot;http://site.com/image.jpg&quot;&gt;</b></p>
+      </details>
+    </section>
+
+    <section class="slide clear">
+      <div class="columns two">
+        <div class="center-block">
+          <h2>Слайды</h2>
+          <img src="img/slides.png" width="200" height="200" alt="Ссылка на Слайды">
+        </div>
+        <div class="center-block">
+          <h2>Яндекс Диск</h2>
+          <img src="img/disk.png" width="200" height="200" alt="Ссылка на Яндекс Диск">
+        </div>
+      </div>
+    </section>
+
+    <div class="progress"></div>
+
+    <script src="node_modules/@shower/core/dist/shower.js"></script>
+    <!-- Copyright © 2024 Yours Truly, Famous Inc. -->
+
+  </body>
+
+</html>
